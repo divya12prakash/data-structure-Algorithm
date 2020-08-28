@@ -1,5 +1,6 @@
 package com.dp.datastructures;
 
+import com.dp.algorithmsexercies.chapter01.Factorial;
 import com.dp.coredatastructures.BinarySearchTree;
 import com.dp.coredatastructures.FenwickTree;
 import org.junit.jupiter.api.Test;
@@ -41,4 +42,10 @@ class DataStructuresApplicationTests {
 		}
 		System.out.println(binarySearchTree);
 	}
+
+	@Test
+	void test_Factorial(){
+		System.out.println(Factorial.factorial(4));
+	}
 }
+
