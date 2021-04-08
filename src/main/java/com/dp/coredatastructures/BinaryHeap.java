@@ -31,7 +31,7 @@ public class BinaryHeap<T extends Comparable<T>> {
         heap = new ArrayList<T>(heapSize);
 
         // Place all element in heap
-        for (int i = 0; i < heapSize; i++) heap.add(elems[i]);
+        for (T elem : elems) heap.add(elem);
 
         // Heapify process, O(n)
         for (int i = Math.max(0, (heapSize / 2) - 1); i >= 0; i--) sink(i);
