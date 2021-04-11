@@ -22,4 +22,9 @@ public class SamePermutationTest {
         System.out.println(samePermutation.sortArrays(i1, i3));
 
     }
+
+    @Test
+    public void test_extra_space(){
+        System.out.println(samePermutation.extraSpace(i1, i3));
+    }
 }
