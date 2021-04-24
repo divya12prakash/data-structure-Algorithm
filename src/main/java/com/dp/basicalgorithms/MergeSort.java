@@ -13,7 +13,7 @@ public class MergeSort {
 
         int mid = (low + high) / 2;
 
-        while (low < high) {
+        if (low < high) {
             mergeSor(arr, low, mid);
             mergeSor(arr, mid + 1, high);
             merge(arr, low, mid, high);
@@ -23,7 +23,7 @@ public class MergeSort {
     private void merge(int[] arr, int low, int mid, int high) {
 
         int leftIndex = low;
-        int rightIndex = low + 1;
+        int rightIndex = mid + 1;
         int auxIndex = low;
 
 
@@ -39,7 +39,7 @@ public class MergeSort {
                 auxArray[auxIndex++] = arr[i];
             }
         } else {
-            for (int j = rightIndex; j < high; j++) {
+            for (int j = rightIndex; j <= high; j++) {
                 auxArray[auxIndex++] = arr[j];
             }
         }
