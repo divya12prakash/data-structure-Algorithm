@@ -1,4 +1,4 @@
-package com.dp.basicalgorithms;
+package com.dp.basicalgorithms.sorting;
 
 
 import java.util.ArrayList;

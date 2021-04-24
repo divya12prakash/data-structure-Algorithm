@@ -1,6 +1,6 @@
 package com.dp.datastructures;
 
-import com.dp.basicalgorithms.MergeSort;
+import com.dp.basicalgorithms.sorting.MergeSort;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
