@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Queue;
 
 /**
- * Implement Breadth first search using a queue data structure.
+ * Implement Breadth first binarysearch using a queue data structure.
  */
 public class BFSQueue {
 

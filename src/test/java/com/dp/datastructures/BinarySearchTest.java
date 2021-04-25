@@ -1,6 +1,6 @@
 package com.dp.datastructures;
 
-import com.dp.basicalgorithms.search.BinarySearch;
+import com.dp.basicalgorithms.binarysearch.BinarySearch;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

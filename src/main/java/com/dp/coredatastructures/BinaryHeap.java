@@ -157,7 +157,7 @@ public class BinaryHeap<T extends Comparable<T>> {
     // Removes a particular element in the heap, O(n)
     public boolean remove(T element) {
         if (element == null) return false;
-        // Linear removal via search, O(n)
+        // Linear removal via binarysearch, O(n)
         for (int i = 0; i < size(); i++) {
             if (element.equals(heap.get(i))) {
                 removeAt(i);

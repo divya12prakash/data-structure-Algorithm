@@ -1,4 +1,4 @@
-package com.dp.basicalgorithms.search;
+package com.dp.basicalgorithms.binarysearch;
 
 
 
