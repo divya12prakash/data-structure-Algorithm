@@ -35,14 +35,9 @@ public class ShipPackages {
 
         for(int w : weights) {
             currentWeight += w;
-
             if (currentWeight > maxWeight) {
-
-                int nextDayWeight = w;
-
-                if (nextDayWeight > maxWeight) return false;
-
-                currentWeight = nextDayWeight;
+                if (w > maxWeight) return false;
+                currentWeight = w;
                 day++;
             }
 
