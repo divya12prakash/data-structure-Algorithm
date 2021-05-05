@@ -1,4 +1,4 @@
-package com.dp.basicalgorithms;
+package com.dp.basicalgorithms.graphs;
 
 import java.util.LinkedList;
 import java.util.Iterator;

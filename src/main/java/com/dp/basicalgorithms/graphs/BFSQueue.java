@@ -1,11 +1,10 @@
-package com.dp.basicalgorithms;
+package com.dp.basicalgorithms.graphs;
 
 
 import lombok.Getter;
 import lombok.Setter;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Queue;
 

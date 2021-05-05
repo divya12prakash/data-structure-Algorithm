@@ -1,6 +1,5 @@
-package com.dp.basicalgorithms;
+package com.dp.basicalgorithms.graphs;
 
-import java.util.Iterator;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Stack;
