@@ -24,7 +24,6 @@ public class BinaryHeap<T extends Comparable<T>> {
     }
 
     // Construct a priority queue using heapify in O(n) time, a great explanation can be found at:
-    // http://www.cs.umd.edu/~meesh/351/mount/lectures/lect14-heapsort-analysis-part.pdf
     public BinaryHeap(T[] elems) {
 
         int heapSize = elems.length;
