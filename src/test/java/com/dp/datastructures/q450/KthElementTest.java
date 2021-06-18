@@ -15,5 +15,8 @@ public class KthElementTest {
         final var element = kthElement.kthElement(input, 4);
         System.out.println(element);
 
+        final var element2 = kthElement.kthElementQuickSort(input, 0, input.length - 1, 4);
+        System.out.println(element2);
+
     }
 }
