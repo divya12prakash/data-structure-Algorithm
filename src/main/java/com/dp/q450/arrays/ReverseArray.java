@@ -13,7 +13,6 @@ public class ReverseArray {
             temp = array[low];
             array[low] = array[high];
             array[high] = temp;
-
             low++;
             high--;
         }
