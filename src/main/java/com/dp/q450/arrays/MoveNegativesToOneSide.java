@@ -13,9 +13,7 @@ public class MoveNegativesToOneSide {
             if(input[end] >= 0) end--;
 
             if(input[start] >= 0 && input[end] < 0){
-                int temp = input[start];
-                input[start] = input[end];
-                input[end] = temp;
+                input[start] = input[start] ^ input[end] ^ (input[end] = input[start]);
                 start++;
                 end--;
             }
