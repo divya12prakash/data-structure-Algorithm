@@ -14,7 +14,6 @@ public class RotateArrayByKelements {
         reverseArray(input, 0, k);
         reverseArray(input, input.length - k - 1, input.length - 1);
 
-
     }
 
     private void reverseArray(int[] input, int l, int r) {
