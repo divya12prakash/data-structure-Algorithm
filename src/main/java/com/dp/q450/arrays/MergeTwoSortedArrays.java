@@ -1,5 +1,7 @@
 package com.dp.q450.arrays;
 
+import java.util.Arrays;
+
 public class MergeTwoSortedArrays {
 
 
@@ -46,5 +48,32 @@ public class MergeTwoSortedArrays {
 
         return arr1;
 
+    }
+
+
+    static int arr1[] = new int[] { 1, 5, 9, 10, 15, 20 };
+    static int arr2[] = new int[] { 2, 3, 8, 13 };
+
+    // Function to merge two arrays
+    static void merge(int m, int n)
+    {
+
+        int i= m-1, j=0;
+        while(i>=0 && j<n){
+            if(arr1[i] > arr2[j]){
+                arr1[i] = arr1[i] ^ arr2[j] ^ (arr2[j++] = arr1[i--]);
+            } else break;
+        }
+        Arrays.sort(arr1);
+        Arrays.sort(arr2);
+    }
+
+    public static void main(String[] args)
+    {
+        merge(arr1.length, arr2.length);
+        System.out.print("After Merging \nFirst Array: ");
+        System.out.println(Arrays.toString(arr1));
+        System.out.print("Second Array:  ");
+        System.out.println(Arrays.toString(arr2));
     }
 }
