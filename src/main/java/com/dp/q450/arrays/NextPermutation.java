@@ -20,6 +20,7 @@ public class NextPermutation {
     public int[] nextPerm(int[] arr) {
         int i = arr.length - 2;
 
+        //loop till the point arr[i] is greater than the other element, the moment the value is less, break the loop
         while (i >= 0 && arr[i] >= arr[i + 1]) {
             i--;
         }
