@@ -11,5 +11,8 @@ public class CountInversionTest {
     @Test
     public void testBruteForce() {
         System.out.println(ci.bruteForce(input));
+        int[] aux_array = new int[input.length];
+
+        System.out.println(ci.mergeSortMethod(input, aux_array,0, input.length - 1));
     }
 }
