@@ -14,6 +14,7 @@ public class CountPairsForGivenSum {
                 count++;
                 hashMap.put(input[i], 0);
             } else hashMap.put(input[i], 0);
+
         }
 
         return count;
