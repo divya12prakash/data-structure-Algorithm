@@ -1,22 +1,25 @@
 package com.dp.q450.arrays;
 
 import java.util.HashMap;
+import java.util.HashSet;
 
+/**
+ * Not the right solution
+ */
 public class CountPairsForGivenSum {
 
     public int countPairs(int[] input, int sum) {
 
-        HashMap<Integer, Integer> hashMap = new HashMap<>();
+        HashSet< Integer> set = new HashSet<>();
         int count = 0;
 
-        for(int i=0; i < input.length; i++) {
-            if(hashMap.containsKey(sum - input[i])){
-                count++;
-                hashMap.put(input[i], 0);
-            } else hashMap.put(input[i], 0);
-
+        for(int i=0; i< input.length; i++) {
+          if(set.contains(sum - input[i])){
+              count++;
+              set.add(input[i]);
+          }
+          else set.add(input[i]);
         }
-
         return count;
     }
 }
