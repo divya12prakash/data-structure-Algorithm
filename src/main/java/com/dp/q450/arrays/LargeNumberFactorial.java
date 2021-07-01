@@ -17,7 +17,7 @@ public class LargeNumberFactorial {
         int resSize = 1;
 
         for(int i=2; i< num; i++) {
-            resSize = multiply(res, i,resSize);
+            resSize = multiply(res, i, resSize);
         }
 
         return res;
