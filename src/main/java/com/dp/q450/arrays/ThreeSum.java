@@ -1,6 +1,7 @@
 package com.dp.q450.arrays;
 
 import java.util.Arrays;
+import java.util.HashSet;
 
 public class ThreeSum {
 
@@ -29,5 +30,32 @@ public class ThreeSum {
             }
         }
         return false;
+    }
+
+
+    /**
+     * Using a hash implementation. Save the entire array in a hashset.
+     * then fix one element and iterate through the other ones.
+     * check if the difference of temp sum and the element is present in the set
+     * Exit if the element is available
+     */
+
+    public boolean hashingImplementation(int[] arr, int sum) {
+
+        HashSet<Integer> set = new HashSet<>();
+        for ( int i = 0; i < arr.length - 2; i++) {
+
+            int currSum = sum - arr[i];
+
+            for (int j = i + 1; j < arr.length; j++) {
+                if(set.contains(currSum - arr[j])) {
+                    return true;
+                }
+                set.add(arr[j]);
+            }
+        }
+
+        return false;
+
     }
 }
