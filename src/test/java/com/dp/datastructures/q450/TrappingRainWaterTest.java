@@ -13,5 +13,6 @@ public class TrappingRainWaterTest {
         TrappingRainWater t = new TrappingRainWater();
 
         System.out.println(t.tappingWater(input));
+        System.out.println(t.getTrappedWater(input));
     }
 }
