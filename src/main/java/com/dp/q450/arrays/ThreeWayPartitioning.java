@@ -41,20 +41,19 @@ public class ThreeWayPartitioning {
         int high  = array.length - 1;
 
 
-        for(int index = 0; index < array.length - 1 ; ) {
+        for(int index = 0; index < array.length - 1 ; index++) {
 
             if(array[index] < start) {
                 array[low]  = array[low] ^ array[index] ^ (array[index] = array[low]);
-                index++;
                 low++;
             }
 
             else if(array[index] > end) {
                 array[high] = array[index] ^ array[high] ^ (array[high] = array[index]);
                 end--;
-                //index++;
+                index--;
             }
-            else index++;
+
         }
 
 
