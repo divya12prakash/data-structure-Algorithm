@@ -36,6 +36,13 @@ public class ThreeWayPartitioning {
     }
 
 
+    /**
+     * some thing is not right here
+     * @param array
+     * @param start
+     * @param end
+     * @return
+     */
     public int[] threeWay(int[] array, int start, int end) {
         int low = 0;
         int high  = array.length - 1;
