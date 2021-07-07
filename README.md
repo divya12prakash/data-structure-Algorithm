@@ -1,2 +1,2 @@
 # Data-structure-Algorithm
-This is a project to start my journey towards learning data structures and algorithms
+Refresh some of these concepts again
