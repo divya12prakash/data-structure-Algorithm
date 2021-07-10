@@ -8,10 +8,10 @@ public class FindRowWithMax1s {
      * variable
      */
 
-    public int max1s(int[][] array, int row, int col) {
+    public int max1s_bruteForceBinarySearch(int[][] array, int row, int col) {
 
         int maxRowIndex = -1;
-        int maxIndexForSpecificRow = 0;
+        int maxIndexForSpecificRow = -1;
 
 
         for (int index = 0; index < row; index++) {
@@ -28,8 +28,11 @@ public class FindRowWithMax1s {
         return maxRowIndex;
     }
 
-    private int search(int[] ints, int low, int high) {
 
+    /*
+    Binary search code
+     */
+    private int search(int[] ints, int low, int high) {
 
         if(low > high) return -1 ;
 
