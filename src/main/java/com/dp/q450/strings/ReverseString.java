@@ -6,9 +6,7 @@ public class ReverseString {
 
 
     public String reverseString(String input) {
-        char[] inputChars = new char[input.length()];
-
-        inputChars = input.toCharArray();
+        char[] inputChars = input.toCharArray();
 
         int i = 0;
         int j = inputChars.length -1 ;
